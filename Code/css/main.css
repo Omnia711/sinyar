@@ -1,0 +1,1094 @@
+/* custome style  */
+:root {
+  --main-color: #43abe1;
+  --secondary-color: #e84c47;
+  --main-font: "Jost", sans-serif;
+  --main-bg-color: #43abe10a;
+  --secondary-bg-color: #e84c470d;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  line-height: 25px;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--main-font);
+  vertical-align: baseline;
+}
+a:hover {
+  color: #000;
+}
+h2 {
+  color: var(--main-color);
+  line-height: 67.9998px;
+  font-size: 60px;
+  letter-spacing: -1.2px;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+p {
+  color: #000;
+  line-height: 25px;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--main-font);
+  margin: 6px 0px 0px;
+}
+#FavDest,
+#tours {
+  margin-block: 70px;
+}
+/* start Fav-Dest section   */
+
+.sec-head {
+  padding: 50px;
+}
+.owl-theme {
+  width: 1300px;
+  height: 176px;
+}
+.owl-theme .item-content .item-img {
+  width: 136px;
+  height: 136px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.owl-theme .item-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.owl-theme .item-content:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* end Fav-Dest section  */
+
+/* start Tours&Things section  */
+.tours-right-inner {
+  overflow: hidden;
+}
+.tours-right-inner .backg-layer {
+  background: linear-gradient(
+    transparent 0,
+    transparent 26.4%,
+    rgba(3, 3, 3, 0.6) 100%
+  );
+  width: 100%;
+  height: 100%;
+}
+.tours-right-inner img,
+.tours-right-inner .layer,
+.main-home-img img {
+  transition: transform 1s ease;
+}
+
+.tours-right-inner:hover img,
+.main-home-img:hover img {
+  transform: scale(1.04);
+}
+
+.tours-right-inner .layer {
+  width: 100%;
+}
+.tours-right-inner .layer a h5 {
+  color: white;
+  line-height: 40px;
+  font-size: 33px;
+  letter-spacing: -0.66px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+}
+
+.tours-left-inner .box {
+  padding: 35px 60px 35px;
+}
+.hover-underline-animation {
+  font-style: italic !important;
+  position: relative;
+}
+
+.hover-underline-animation:before,
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(100%);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.33, 0.52, 0.05, 0.96);
+}
+
+.hover-underline-animation:hover:before {
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.4s cubic-bezier(0.33, 0.52, 0.05, 0.96);
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.4s cubic-bezier(0.33, 0.52, 0.05, 0.96);
+}
+/* end Tours&Things section  */
+/* start  second carousel section */
+#sec-car .item-o {
+  width: 345px !important;
+  height: 520px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+#sec-car .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+#sec-car .overlay h5 {
+  font-size: 24px;
+  line-height: 31.9999px;
+  vertical-align: baseline;
+  color: #fff;
+  text-align: start;
+  padding-left: 15px;
+  font-family: var(--main-font);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.block > div {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.block > div:last-child {
+  margin-bottom: 0;
+}
+.block-item {
+  height: 114px;
+}
+
+/* end  second carousel section */
+
+/* start where next section  */
+#next .round-shap {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 60% 45%;
+  border-top-right-radius: 60% 45%;
+  height: 500px !important;
+  width: 377px !important;
+}
+
+.nex-content .nex-category a {
+  background-color: var(--secondary-color);
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 15.8824px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 2px 15px 2px;
+  text-decoration: none solid var(--secondary-color);
+  font-family: var(--main-font);
+  font-weight: 600;
+  vertical-align: middle;
+}
+.nex-content .nex-inner-text a {
+  font-size: 24px;
+  line-height: 31.9999px;
+  font-weight: 400;
+}
+/* end where next section  */
+
+/* start latest third carousel  */
+#latest {
+  background-color: #fff9ee;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+#latest .owl-themee {
+  padding-inline: 40px;
+}
+
+#latest .owl-themee .item {
+  width: 275px;
+}
+#latest .item .third-car-content .author-details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -6px;
+}
+/*  end latest third carousel */
+
+/* start best Travel section  */
+#best-travel {
+  background-color: #f1f5f1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-block: 100px;
+}
+#best-travel .best-left-col {
+  background: url(https://wanderaway.qodeinteractive.com/wp-content/uploads/2023/08/home1-parallax-img-1.jpg)
+    no-repeat 85% 40%;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+#best-travel .best-left-col .banner-img .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  background-color: #fff;
+  height: 200px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.qodef-stamp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.qodef-stamp .qodef-m-svg {
+  overflow: visible;
+  width: 42px;
+  height: 42px;
+  position: relative;
+  z-index: 5;
+}
+
+.qodef-stamp .qodef-m-svg text {
+  fill: currentColor;
+}
+
+.qodef-stamp .qodef-m-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.qodef-stamp .qodef-m-circle svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: qode-rotate 13s linear infinite;
+  fill: var(--stamp-color, #a6c5a9);
+}
+.qodef-m-badge {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  z-index: 100;
+}
+
+.best-travel-content-head {
+  width: 486px;
+  text-align: start !important;
+}
+.best-travel-content-head p {
+  font-size: 17px;
+  padding-bottom: 40px;
+}
+
+#best-travel .bt-button {
+  background-color: var(--secondary-color);
+  margin: 0px 32px 0px;
+  padding: 10px 42px 18px;
+  width: fit-content;
+}
+
+#best-travel .bt-a {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.2;
+  color: #fff;
+  vertical-align: middle;
+  text-align: start;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+#best-travel .bt-a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease;
+}
+#best-travel .bt-a:hover::after {
+  transform: scaleX(1);
+}
+.best-travel-content-footer {
+  margin-left: 80px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.best-travel-content-footer p {
+  vertical-align: middle;
+  font-size: 17px;
+  margin: 5px 0px 0px;
+}
+/* end best Travel section  */
+/* start Quick-Pick section   */
+#Quick-Pick .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: var(--secondary-color);
+  height: 60px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#Quick-Pick .text-overlay h4 {
+  font-weight: 400;
+}
+/* end Quick-Pick section   */
+.single-widget ul li a:hover {
+  color: var(--main-color);
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ START ABOUT +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* start about title */
+#about-title {
+  background: url(https://wanderaway.qodeinteractive.com/wp-content/uploads/2023/08/about-img-1.jpg)
+    no-repeat 55% 0%;
+  height: 388px;
+  width: 1519px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    /* top: 100px; */
+}
+#about-title h1 {
+  font-family: var(--main-font);
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 73.0002px;
+  letter-spacing: -1.3px;
+  color: #fff;
+}
+/* end about title */
+/* start about content sec  */
+.about-h-content {
+  text-align: center;
+}
+#about-hh .about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-hh .about-text .about-sec-content p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+.about-sec-content-sign p {
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-family: Playwrite AT, cursive;
+}
+/* end about content sec  */
+/* start about video sec  */
+#about-vid .about-vid-block {
+  position: relative;
+  text-align: center;
+}
+.about-vid-img {
+  width: 100%;
+  height: auto;
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+.video-content {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
+}
+
+.video-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+.popup-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 1;
+}
+.play-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+}
+.cls-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+/* end about video sec */
+/* start explore section */
+#explore {
+  overflow: hidden;
+  background-color: var(--secondary-bg-color);
+}
+#explore .inner {
+  width: 480px;
+  height: 480px;
+}
+.media-content h4 {
+  font-size: 24px;
+  line-height: 31.9999px;
+  font-weight: 400;
+}
+.media-content .media-icon a {
+  background-color: var(--secondary-color);
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 15.8824px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 2px 15px 2px;
+  text-decoration: none solid var(--secondary-color);
+  font-family: var(--main-font);
+  font-weight: 600;
+  vertical-align: middle;
+}
+#explore .image-h {
+  position: relative;
+  overflow: hidden;
+}
+
+#explore .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#explore .image-text h3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 33px !important;
+  line-height: 40px;
+  letter-spacing: -0.66px;
+  font-weight: 400;
+}
+/* end explore section */
+/* start visit owl section */
+.about-visit {
+  background-color: var(--main-bg-color) !important;
+}
+.about-visit .item {
+  height: 315px !important;
+  width: 210px !important;
+}
+.about-visit .owl-themee {
+  padding-inline: 70px 50px !important;
+}
+.about-visit .door-shap img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 60% 45%;
+  border-top-right-radius: 60% 45%;
+}
+/* end visit owl section */
+
+/* img hover move  */
+.block-item .block-img,
+.nex-img,
+.third-car-img,
+.quick-img,
+.media-image,
+.image-h,
+.blog-img,
+.image-container,
+.post-img {
+  overflow: hidden;
+}
+#sec-car .item-o img,
+.block-item .block-img img,
+.nex-img img,
+.third-car-img img,
+.quick-img img,
+.media-image img,
+.image-h img,
+.blog-img img,
+.image-container img,
+.post-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+#sec-car .item-o:hover img,
+.block-item .block-img:hover img,
+.nex-img:hover img,
+.third-car-img:hover img,
+.quick-img:hover img,
+.media-image:hover img,
+.image-h:hover img,
+.blog-img:hover img,
+.image-container:hover img,
+.post-img:hover img {
+  transform: scale(1.03);
+}
+/* img hover move  */
+/* ====================================================== */
+/* vission section */
+#viss-sec{
+  background-color: var(--secondary-bg-color);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-block: 50px;
+}
+.about-viss-sect {
+  display: flex;
+  flex-direction: column;
+  max-width: 543px;
+  min-height: 660px;
+  position: relative;
+}
+
+.about-viss-sect .about-viss-content h3 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 500;
+  transition: all 0.75s;
+  margin: 0 0 17px;
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+.about-viss-sect .about-viss-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: var(--main-font);
+  transition: all 0.75s;
+  text-align: start !important;
+}
+
+.about-viss-sect .about-viss-img {
+  height: 447px;
+  margin: auto 0 0;
+  transition: all 0.7s;
+  position: relative;
+  width: 100%;
+}
+
+.about-viss-sect .about-viss-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.7s;
+  position: absolute;
+  inset: 0;
+}
+
+.viss-sec .col-md-6:nth-child(2) .about-viss-sect {
+  flex-direction: column-reverse;
+  margin-inline-start: auto;
+}
+
+.viss-sec .col-md-6:nth-child(2) .about-viss-sect .about-viss-img {
+  margin: 0 0 auto;
+}
+
+.viss-sec .about-viss-sect:hover .about-viss-content {
+  padding: 40px 40px 40px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(145%);
+  background: var(--secondary-color);
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  z-index: 2;
+  left: 0;
+}
+
+.about-viss-sect:hover .about-viss-content h3,
+.about-viss-sect:hover .about-viss-content p {
+  color: #fff;
+}
+
+.viss-sec .col-md-6:nth-child(2) .about-viss-sect:hover .about-viss-content {
+  transform: translateY(-155%);
+}
+
+.viss-sec .col-md-6:nth-child(2) .about-viss-sect .about-viss-content {
+  margin: 0 auto;
+}
+
+.viss-sec .about-viss-sect .about-viss-content {
+  margin: 0 auto 30px;
+  transition: all 0.75s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+.about-viss-sect:hover .about-viss-img img {
+  transform: scale(1.1);
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ START CONTACT PAGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* start contact title */
+#contact-title {
+  background: url(https://wanderaway.qodeinteractive.com/wp-content/uploads/2023/11/contact-img-01.jpg)
+  no-repeat 55% 0%;
+  height: 388px;
+  width: 1519px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	position: relative;
+    top: 107px;
+}
+#contact-title h1 {
+  font-family: var(--main-font);
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 73.0002px;
+  letter-spacing: -1.3px;
+  color: #fff;
+}
+/* end contact title */
+/* start contact body  */
+.inner-left-o h2{
+  text-align: start;
+  color: #000;
+}
+.inner-left-o p, .inner-left-oo p{
+  font-size: 17px;
+  text-align: start;
+}
+.inner-left-oo input, .inner-right-o textarea, .inner-right-inputs input{
+  border: 1px solid rgba(165, 165, 165, 0.399);
+  width: 85%;
+}
+.inner-left-oo input:focus, textarea:focus, .inner-right-inputs input:focus{
+  outline: none;
+}
+.input-icon {
+  position: absolute;
+  right: 18%;
+  top: 20%;
+}
+
+.inner-right-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-right-inputs input {
+  flex: 1;
+  margin-right: 10px; 
+  padding-block: 10px;
+}
+
+.inner-right-inputs input:last-child {
+  margin-right: 0;
+}
+#contact-inner-sec .bt-button {
+  background-color: var(--secondary-color);
+  /* margin: 0px 32px 0px; */
+  padding: 12px 40px 12px;
+  width: fit-content;
+}
+
+#contact-inner-sec .bt-a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.2;
+  color: #fff;
+  vertical-align: middle;
+  text-align: start;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+#contact-inner-sec .bt-a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.5s ease;
+}
+#contact-inner-sec .bt-a:hover::after {
+  transform: scaleX(1);
+}
+/* end contact body  */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ START Destiantion PAGE (البرامج السياحية) +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* start all destination title */
+#destination-title {
+  background: url(https://wanderaway.qodeinteractive.com/wp-content/uploads/2023/11/contact-img-01.jpg)
+  no-repeat 55% 0%;
+  height: 388px;
+  width: 1519px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	position: relative;
+}
+#destination-title h1 {
+  font-family: var(--main-font);
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 73.0002px;
+  letter-spacing: -1.3px;
+  color: #fff;
+  text-align: center;
+}
+/* end all destination title */
+/* start destination body  */
+#dest-page .image-h {
+  position: relative;
+  overflow: hidden;
+  height: 100%; 
+}
+
+#dest-page .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 1; 
+}
+
+#dest-page .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+#dest-page .image-text h3{
+  margin: 0;
+  font-size: 34px; 
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  padding: 0;
+}
+#dest-page .image-text span {
+  margin: 0;
+  padding: 0;
+  font-size: 19px; 
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+/* end destination body  */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ START Blog PAGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* start Blog title  */
+#blog-title {
+  background: url(https://wanderaway.qodeinteractive.com/wp-content/uploads/2023/11/contact-img-01.jpg)
+  no-repeat 55% 0%;
+  height: 388px;
+  width: 1519px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	position: relative;
+}
+#blog-title h1 {
+  font-family: var(--main-font);
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 73.0002px;
+  letter-spacing: -1.3px;
+  color: #fff;
+  text-align: center;
+}
+/* end Blog title  */
+
+/* start blog body */
+.blog-content .blog-text h3{
+  font-weight: 400; 
+  font-size: 33px; 
+  line-height: 44px;
+}
+.blog-content .blog-text p{
+  font-size: 18px; 
+  font-family: var(--main-font); 
+  margin: 17px 0px 0px;
+}
+.inner-qoute{
+  margin-block: 80px; 
+  background-color: var(--secondary-bg-color); 
+  padding-block: 40px;
+}
+.inner-qoute h3{
+text-align: center; 
+    font-weight: 400;
+    color: #000;
+    font-size: 33px;
+    line-height: 1.21212em;
+    letter-spacing: -.02em;
+    margin: 25px 0;
+    padding-inline: 120px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+/* blog sec 5  */
+.nav-button {
+  font-size: 50px; 
+  font-weight: 600;
+  width: 60px;    
+  height: 60px;    
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #fff; 
+  background-color: var(--secondary-color); 
+  border-radius: 0% 50% 50%  0% ; 
+  cursor: pointer;
+  z-index: 10; 
+  transition: all .5s;
+}
+.next{
+  border-radius: 50% 0% 0% 50% !important  ; 
+}
+.owl-prev {
+  position: absolute;
+  left: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-next {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button:hover {
+  background-color: var(--main-color);
+}
+
+
+.profile-card {
+  background-color: var(--secondary-bg-color);
+  padding: 10px;
+  border-radius: 45% 45% 0% 0%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 45% 45% 0% 0%;
+
+}
+
+
+.profile-card h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 25px;}
+
+.profile-card p {
+  font-size: 17px;
+}
+
+.signature {
+  font-family: 'Brush Script MT', cursive;
+  color: #666;
+  margin-top: 20px;
+}
+.pill-shape {
+  background-color:var(--secondary-bg-color);
+  width: fit-content; 
+  height: 65px; 
+  margin-block: 20px;
+  padding-inline: 15px; 
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.img-container {
+  width: 60px; 
+  height: 60px; 
+  overflow: hidden; 
+  flex-shrink: 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+
+.categories-card h5{
+  font-size: 18px;
+font-weight: 500;}
+
+.icons-block{
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.icon-block{
+  background-color:var(--secondary-bg-color); 
+  flex: 1 1 calc(33.33% - 10px);
+  padding-block: 10px;
+}
+.icons-block p{
+  font-size: 14px;
+}
+.img-card {
+  position: relative;
+  display: inline-block;
+}
+
+.img-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.overlay-content svg {
+  margin-right: 10px;
+}
+/* end blog body */
+
